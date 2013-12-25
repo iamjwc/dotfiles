@@ -22,3 +22,57 @@ for option in autocd globstar; do
 done
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+export TERM="xterm-color"
+export EDITOR=vim
+
+alias ls="ls -G"
+
+RESET="\[\033[30m\]"
+DARK_GREY="\[\033[0;30m\]"
+LIGHT_BLUE="\[\033[0;34m\]"
+LIGHT_GREEN="\[\033[0;32m\]"
+
+#export PS1="\n$DARK_GREY[$LIGHT_BLUE\w$DARK_GREY]$LIGHT_GREEN\$ $RESET"
+export PS1="\n$DARK_GREY[$LIGHT_BLUE\w$DARK_GREY]$LIGHT_GREEN ☞  $RESET"
+
+# History help from http://blog.macromates.com/2008/working-with-history-in-bash/
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
+# Enables color in the terminal
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+# Rails help
+alias sc='./script/console'
+alias ss='./script/server'
+alias sdb='./script/dbconsole'
+alias t='RACK_ENV=test bundle exec ruby -Itest'
+
+alias gs='git status'
+
+alias be='bundle exec'
+
+function swap {
+  mv $1 $1_dis_is_a_swap_copy
+  mv $2 $1
+  mv $1_dis_is_a_swap_copy $2
+}
+
+if [[ -s /Users/iamjwc/.rvm/scripts/rvm ]] ; then source /Users/iamjwc/.rvm/scripts/rvm ; fi
+
+ANIMOTO_DIR='~/.animoto/'
+
+ssh-add
+
+# http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+export PATH=$PATH:/usr/local/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=$PATH:/usr/local/sbin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
