@@ -76,3 +76,9 @@ shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 export PATH=$PATH:/usr/local/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=$PATH:/usr/local/sbin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+
+# Initialize rbenv 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Add brew packages to PATH
+export PATH=/usr/local/bin:$PATH
