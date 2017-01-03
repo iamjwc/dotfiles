@@ -1,5 +1,6 @@
 {
   "current_environment": "development",
+
   "distribute": {
     "client_password": "web2secret",
     "host": "https://distribute.animoto.com/a/",
