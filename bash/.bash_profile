@@ -30,6 +30,7 @@ done
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+
 export TERM="xterm-color"
 export EDITOR=vim
 
@@ -88,11 +89,18 @@ export PATH=$PATH:/usr/local/sbin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/U
 # Add brew packages to PATH
 export PATH=/usr/local/bin:$PATH
 
-source ~/.profile
-
-export ANIMOTO_STACK_ROOT=~/programming
 export ANIMOTO_DIR=~/.animoto
 
 
 #sudo ipfw add fwd 127.0.0.1:20080 tcp from any to me dst-port 80
 #sudo ipfw add fwd 127.0.0.1:20443 tcp from any to me dst-port 443
+
+
+
+
+
+export ANIMOTO_STACK_ROOT=/Users/iamjwc/programming/stack
+export globals
+eval "$(nodenv init -)"
+eval "$(rbenv init -)"
+ulimit -n 10240
