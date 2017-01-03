@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/iamjwc/programming/stackimoto/applications/api/script'
+let g:netrw_dirhist_2='/Users/iamjwc/programming/stackimoto/applications/api/app/interactors'
+let g:netrw_dirhist_3='/Users/iamjwc/programming/stackimoto/applications/api/lib/migrant'
+let g:netrw_dirhist_4='/Users/iamjwc/programming/stackimoto/applications/api/lib'
+let g:netrw_dirhist_5='/Users/iamjwc/programming/stackimoto/applications/api/lib/migrant'
+let g:netrw_dirhist_6='/Users/iamjwc/programming/stackimoto/applications/api/config'
+let g:netrw_dirhist_7='/Users/iamjwc/programming/stackimoto/applications/api/config/initializers'
+let g:netrw_dirhist_8='/Users/iamjwc/programming/stackimoto/applications/api/spec/shared_context'

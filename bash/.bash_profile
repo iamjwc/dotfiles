@@ -3,6 +3,12 @@
 # assume that it lives at ~/.bash_profile and go from there...
 export BASH_CONFIG_ROOT="$( dirname $( readlink "${BASH_SOURCE[0]}" ))"
 
+
+export NODENV_ROOT=/usr/local/var/nodenv
+ 
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+export PATH=~/.nodenv/shims:$PATH
+
 # Try to load up some completions
 for file in /usr/local/etc/bash_completion.d/{git-completion.bash,git-prompt.sh,R}; do
   [ -r "$file" ] && source "$file"
@@ -55,6 +61,8 @@ alias ss='./script/server'
 alias sdb='./script/dbconsole'
 alias t='RACK_ENV=test bundle exec ruby -Itest'
 
+alias serve='ifconfig | grep "inet " | grep broadcast | cut -d " " -f 2 | while read line; do echo "$line:8000"; done | pbcopy && python -m SimpleHTTPServer'
+
 alias gs='git status'
 
 alias be='bundle exec'
@@ -74,11 +82,17 @@ ssh-add
 # http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-export PATH=$PATH:/usr/local/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-export PATH=$PATH:/usr/local/sbin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-
-# Initialize rbenv 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH=$PATH:/usr/local/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=$PATH:/usr/local/sbin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/gems/ruby-1.8.7-p330@global/bin:/Users/iamjwc/.rvm/rubies/ruby-1.8.7-p330/bin:/Users/iamjwc/.rvm/bin:/usr/local/Cellar/vim/HEAD/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/iamjwc/programming/rx/bin
 
 # Add brew packages to PATH
 export PATH=/usr/local/bin:$PATH
+
+source ~/.profile
+
+export ANIMOTO_STACK_ROOT=~/programming
+export ANIMOTO_DIR=~/.animoto
+
+
+#sudo ipfw add fwd 127.0.0.1:20080 tcp from any to me dst-port 80
+#sudo ipfw add fwd 127.0.0.1:20443 tcp from any to me dst-port 443

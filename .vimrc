@@ -22,7 +22,6 @@ nnoremap ' `
 nnoremap ` '
 
 
-
 " The leader character is your own personal
 " modifier key, as g is Vim’s modifier key (when
 " compared to vi). The default leader is \, but
@@ -180,7 +179,7 @@ fu! GrepDir(...)
     let word = expand('<cword>')
   endif
 
-  :execute 'grep -r --exclude=coverage/* --exclude=metrics/coverage/* --exclude=*jquery* --exclude=*.log --exclude=*.*-base --exclude=vendor/* --exclude=*.tmp '.word.' *' | :copen | :cc
+  :execute 'grep -r --exclude=node_modules/* --exclude=coverage/* --exclude=metrics/coverage/* --exclude=*jquery* --exclude=*.log --exclude=*.*-base --exclude=vendor/* --exclude=*.tmp '.word.' *' | :copen | :cc
 endfunction
 command -nargs=* Grep  :call GrepDir(<f-args>)
 " ENDYES! I wrote a vim function
@@ -204,6 +203,7 @@ augroup filetype
   autocmd BufNewFile,BufRead *.sass set filetype=sass
   autocmd BufNewFile,BufRead *.io set filetype=io
   autocmd BufNewFile,BufRead *.rake set filetype=ruby
+  autocmd BufNewFile,BufRead *.arb set filetype=ruby
 augroup END
 
 syntax on
