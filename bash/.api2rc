@@ -1,0 +1,21 @@
+{
+  "production": {
+    "host": "https://platform.animoto.com",
+    "previous_data": "{\"directing_and_rendering_job\":{\"directing_manifest\":{\"style\":\"jager\",\"title\":\"My Great Video\",\"visuals\":[{\"h1\":\"Check it!\",\"type\":\"title_card\"},{\"source_url\":\"https://mry-52f9-p-0.s3.amazonaws.com/Footage%2Fc7d2be38a30438a5d8d56d97%2Fo.mp4?Signature=kMp2Ml0GROy2rwjsEj9YdTy9QEU%3D&Expires=1394057780&AWSAccessKeyId=AKIAIKXQTTEJWHI6K5BA\",\"type\":\"footage\"}],\"song\":{\"source_url\":\"http://74.86.207.139//content/ringtone/2008/RT482fd8249c892.mp3\"}},\"rendering_manifest\":{\"rendering_parameters\":{\"resolution\":\"180p\",\"format\":\"h264\",\"framerate\":24}}}}",
+    "secret": "ed558d262143003cac5c8b56b62abc6a",
+    "key": "a01289e074cd0131c8ae22000ab5cbd4"
+  },
+  "cmo": {
+    "host": "https://platform-cmo.animoto.com",
+    "previous_data": "{\"directing_and_rendering_job\":{\"directing_manifest\":{\"song\":{\"source_url\":\"http://74.86.207.139//content/ringtone/2008/RT482fd8249c892.mp3\"},\"title\":\"My Great Video\",\"visuals\":[{\"animation\":\"zoom_in\",\"background\":\"#000000\",\"bookend\":true,\"source_url\":\"http://bluegrasslyrics.com/wp-content/uploads/2016/10/bgl-logo.png\",\"type\":\"logo\"},{\"h1\":\"Check it!\",\"type\":\"title_card\"},{\"animation\":\"zoom_in\",\"background\":\"#000000\",\"bookend\":false,\"source_url\":\"http://bluegrasslyrics.com/wp-content/uploads/2016/10/bgl-logo.png\",\"type\":\"logo\"},{\"h1\":\"Check it!\",\"type\":\"title_card\"},{\"animation\":\"zoom_in\",\"background\":\"#000000\",\"bookend\":true,\"source_url\":\"http://bluegrasslyrics.com/wp-content/uploads/2016/10/bgl-logo.png\",\"type\":\"logo\"}]},\"rendering_manifest\":{\"rendering_parameters\":{\"framerate\":24,\"format\":\"h264\",\"resolution\":\"180p\"}}}}",
+    "secret": "e41a76c4b051ba1305cd9b94fabb732a",
+    "key": "d50e35f0c9b3013265b322000aa51d5e"
+  },
+  "current_environment": "cmo",
+  "staging": {
+    "host": "https://platform-staging.animoto.com",
+    "previous_data": "{\"directing_and_rendering_job\":{\"directing_manifest\":{\"song\":{\"source_url\":\"http://74.86.207.139//content/ringtone/2008/RT482fd8249c892.mp3\"},\"visuals\":[{\"type\":\"title_card\",\"h1\":\"Check it!\"},{\"type\":\"title_card\",\"h1\":\"Check it again!\"}],\"title\":\"My Great Video\"},\"rendering_manifest\":{\"rendering_parameters\":{\"resolution\":\"180p\",\"framerate\":24,\"format\":\"h264\"}}}}",
+    "secret": "c0fe4cfca8bf544b8d0e687247a600ef55ff82e3",
+    "key": "bb0d0e005ac4012dc17712313b013462"
+  }
+}
