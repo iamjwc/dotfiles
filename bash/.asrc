@@ -1,6 +1,5 @@
 {
-  "current_environment": "development",
-
+  "current_environment": "production",
   "distribute": {
     "client_password": "web2secret",
     "host": "https://distribute.animoto.com/a/",
@@ -68,8 +67,9 @@
     "host": "https://app-service.animoto.com",
     "client_secret": "thisisasecret",
     "client_username": "adminamoto",
-    "access_token": "8291c3d9fcb81241367b2b9831b7fb8a5ac7a7c625de7f892e33896be1f2fc24",
+    "access_token": "cff01e169878578391436aa84ec415f2e4bfcea831e5887101f5194066001975",
     "previous_data": "{\"user\":{\"date_of_birth\":\"1990-04-12\",\"password_confirmation\":\"password\",\"password\":\"password\",\"last_name\":\"Users\",\"first_name\":\"Testing\",\"gender\":\"male\",\"email\":\"\"}}",
-    "version": "2"
+    "version": "2",
+    "access-token": "cff01e169878578391436aa84ec415f2e4bfcea831e5887101f5194066001975"
   }
 }
