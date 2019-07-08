@@ -1,0 +1,30 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+    highlightMatchingLineNumber: true
+    wrapSelectionsInBrackets: false
+  core:
+    disabledPackages: [
+      "snippets"
+      "project-find-navigation"
+      "vim-mode-plus-ex-mode"
+    ]
+    packagesWithKeymapsDisabled: [
+      "vim-mode-plus"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 15
+    preferredLineLength: 140
+  "exception-reporting":
+    userId: "c5881697-43c8-332d-7b1c-2fbe90400a34"
+  "tree-view":
+    showOnRightSide: true
+  "vim-mode-plus":
+    incrementalSearch: true
+    stayOnDelete: true
+    stayOnTransformString: true
+    stayOnYank: true
+  welcome:
+    showOnStartup: false

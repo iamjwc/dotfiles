@@ -1,0 +1,8 @@
+authtoken: aRQ59WiYft2WtiAWexS9_3nZjAxRaUrXvt9gPVxjxH
+
+tunnels:
+  laddertruck:
+    proto: http
+    addr: 80
+    host: localhost
+    subdomain: iamjwc

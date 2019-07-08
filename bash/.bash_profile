@@ -104,3 +104,6 @@ export globals
 eval "$(nodenv init -)"
 eval "$(rbenv init -)"
 ulimit -n 10240
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/iamjwc/Downloads/google-cloud-sdk 2/path.bash.inc' ]; then . '/Users/iamjwc/Downloads/google-cloud-sdk 2/path.bash.inc'; fi

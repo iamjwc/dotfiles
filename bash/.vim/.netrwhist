@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/iamjwc/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/bundler/gems/animoto_api_utils-18603b61530c/lib/animoto_api_utils'
+let g:netrw_dirhist_2='/Users/iamjwc/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/bundler/gems/animoto_api_utils-18603b61530c/lib/animoto_api_utils/s3'
+let g:netrw_dirhist_3='/Users/iamjwc/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/bundler/gems/animoto_api_utils-18603b61530c/lib/animoto_api_utils'
+let g:netrw_dirhist_4='/Users/iamjwc/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/bundler/gems/animoto_api_utils-18603b61530c/lib/animoto_api_utils/adapters'
+let g:netrw_dirhist_5='/Users/iamjwc'
+let g:netrw_dirhist_6='/Users/iamjwc/programming/stack/config'
+let g:netrw_dirhist_7='/Users/iamjwc'
